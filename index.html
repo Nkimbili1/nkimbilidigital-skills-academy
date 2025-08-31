@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | NkimbiliDigital Skills Academy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #1c92d2, #f2fcfe);
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #0f4c75;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav h2 {
+      font-size: 28px;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #000428, #004e92);
+      color: white;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      animation: zoomIn 1.5s ease;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      color: #d0f0f8;
+    }
+
+    .explore-btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #ffd700;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.4s;
+      display: inline-block;
+      animation: bounceIn 1.5s ease;
+    }
+
+    .explore-btn:hover {
+      background: white;
+      color: #004e92;
+      transform: scale(1.05);
+    }
+
+    .vision {
+      background: #f0f9ff;
+      color: #333;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .vision h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #0f4c75;
+    }
+
+    .vision p {
+      font-size: 17px;
+      max-width: 750px;
+      margin: auto;
+      color: #333;
+    }
+
+    .courses {
+      background: #fff;
+      padding: 60px 20px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .courses h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #0f4c75;
+    }
+
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .course {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+      background: #e0f7fa;
+    }
+
+    .course h3 {
+      color: #0f4c75;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #0f4c75;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 60px;
+      animation: slideUp 1.2s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.6); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      .vision h2, .courses h2 {
+        font-size: 24px;
+      }
+
+      .course h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>NkimbiliDigital Skills Academy</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li><a href="work with us.html">Work With Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to NkimbiliDigital Skills Academy</h1>
+    <p>Your one-stop platform for mastering Microsoft Office tools, web design, and professional digital templates.</p>
+    <a href="#courses" class="explore-btn">Explore Courses</a>
+  </header>
+
+  <!-- Vision Section -->
+  <section class="vision">
+    <h2>Our Vision</h2>
+    <p>
+      To empower students, educators, and professionals with practical digital skills through accessible training and innovative tools. We believe digital literacy is the bridge to a better, smarter future.
+    </p>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses">
+    <h2>Our Popular Courses</h2>
+    <div class="course-list">
+      <div class="course"><h3>Microsoft Word Basics</h3></div>
+      <div class="course"><h3>Microsoft Excel Essentials</h3></div>
+      <div class="course"><h3>Microsoft PowerPoint</h3></div>
+      <div class="course"><h3>Microsoft Publisher</h3></div>
+      <div class="course"><h3>Advanced Excel for Analysis</h3></div>
+      <div class="course"><h3>Internet & Email Skills</h3></div>
+      <div class="course"><h3>HTML & Website Structure</h3></div>
+      <div class="course"><h3>CSS for Web Styling</h3></div>
+      <div class="course"><h3>Responsive Web Design</h3></div>
+      <div class="course"><h3>Digital Marketing Basics</h3></div>
+      <div class="course"><h3>Canva for Beginners</h3></div>
+      <div class="course"><h3>Designing Business Cards</h3></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 NkimbiliDigital Skills Academy. All Rights Reserved. Designed by Mwalimu Monday M. Nkimbili.
+  </footer>
+
+</body>
+</html>

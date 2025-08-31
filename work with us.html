@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work With Us | NkimbiliDigital Skills Academy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #eaf6ff, #ffffff);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #0f4c75;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav h2 {
+      font-size: 26px;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .work-section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .work-section h1 {
+      font-size: 36px;
+      color: #0f4c75;
+      margin-bottom: 15px;
+      animation: slideUp 1s ease;
+    }
+
+    .work-section p {
+      font-size: 18px;
+      max-width: 850px;
+      margin: auto;
+      color: #444;
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+
+    .apply-btn {
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      background: #0f4c75;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+      margin-top: 30px;
+      animation: bounceIn 1.2s ease;
+    }
+
+    .apply-btn:hover {
+      background: #004e92;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #0f4c75;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 60px;
+      animation: slideUp 1.5s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.6); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .work-section h1 {
+        font-size: 28px;
+      }
+
+      .work-section p {
+        font-size: 16px;
+      }
+
+      .apply-btn {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>NkimbiliDigital Skills Academy</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li><a href="work with us.html">Work With Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Work With Us Section -->
+  <section class="work-section">
+    <h1>Join Our Team</h1>
+    <p>
+      NkimbiliDigital Skills Academy is growing, and we believe in teamwork, learning, and opportunity. While our platform is still new and we currently cannot offer paid positions, we offer something even more powerful: **experience, exposure, and skill development**.
+    </p>
+    <p>
+      Whether you are a student, graduate, or just passionate about digital skills – you are welcome to join our mission. Even if you have **no previous experience**, don’t worry – we will grow together. This is your chance to be part of something meaningful and future-focused.
+    </p>
+    <p>
+      If you’re interested in volunteering with us or building your portfolio, click below to apply. It is very simple!
+    </p>
+    <a class="apply-btn" href="https://forms.gle/your-google-form-link" target="_blank">Apply Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 NkimbiliDigital Skills Academy. All Rights Reserved. Designed by Mwalimu Monday M. Nkimbili.
+  </footer>
+
+</body>
+</html>

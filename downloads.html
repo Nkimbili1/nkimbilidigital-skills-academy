@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Downloads | NkimbiliDigital Skills Academy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #eefaff, #ffffff);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #0f4c75;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav h2 {
+      font-size: 26px;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .download-section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .download-section h1 {
+      font-size: 36px;
+      color: #0f4c75;
+      margin-bottom: 15px;
+      animation: slideUp 1s ease;
+    }
+
+    .download-section p {
+      font-size: 18px;
+      max-width: 850px;
+      margin: auto;
+      color: #444;
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    .template-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #f1f9ff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .card:hover {
+      background: #d7f0ff;
+      transform: scale(1.04);
+    }
+
+    .card h3 {
+      color: #0f4c75;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .contact-box {
+      margin-top: 50px;
+      background: #e0f7fa;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 2s ease;
+    }
+
+    .contact-box h3 {
+      color: #0f4c75;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .contact-box span {
+      font-weight: bold;
+      color: #004e92;
+    }
+
+    footer {
+      background: #0f4c75;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 60px;
+      animation: slideUp 1.5s ease;
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .download-section h1 {
+        font-size: 28px;
+      }
+
+      .download-section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>NkimbiliDigital Skills Academy</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li><a href="work with us.html">Work With Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Download Section -->
+  <section class="download-section">
+    <h1>Free Demo Downloads</h1>
+    <p>
+      Get free demo versions of our Excel and PowerPoint templates! These tools are carefully designed to assist teachers and students in managing results, presentations, and academic planning. If you like the demo versions and want full, customized versions — just send us a message via WhatsApp or Normal Text using the numbers provide in this page as well us in our contact page.
+    </p>
+
+    <div class="template-list">
+      <div class="card">
+        <h3>Primary School Results Template</h3>
+        <a href="Primary school template.xlsx" download>Download Excel Demo</a>
+      </div>
+      <div class="card">
+        <h3>O-Level Results Template</h3>
+        <a href="demo/olevel-template.xlsx" download>Download Excel Demo</a>
+      </div>
+      <div class="card">
+        <h3>A-Level Results Template</h3>
+        <a href="Primary school template.xlsx" download>Download Excel Demo</a>
+      </div>
+      <div class="card">
+        <h3>PowerPoint School Intro</h3>
+        <a href="demo/school-presentation.pptx" download>Download PPT Demo</a>
+      </div>
+      <div class="card">
+        <h3>Courses Discriptions</h3>
+        <a href="demo/olevel-template.xlsx" download>Download PDF</a>
+      </div>
+      <div class="card">
+        <h3>Students' Results Management Using Excel (More Explanations)</h3>
+        <a href="demo/olevel-template.xlsx" download>Download PDF</a>
+      </div>
+    </div>
+    
+
+    <div class="contact-box">
+      <h3>Need a Full Version?</h3>
+      <p>
+        We design full Excel templates for <span>Primary, O-Level, and A-Level</span> with everything customized based on your instructions (school name, subject list, grading system, etc).
+      </p>
+      <p>
+        Full versions are available at a very small cost. Payment is once and done. Delivery is fast via WhatsApp.
+      </p>
+      <p>
+        We also design professional PowerPoint presentations for academic or other uses according to your instructions.
+      </p>
+      <p><span>Contact us via WhatsApp:</span> +255 613 931 703</p>
+      <p><span>Alternate WhatsApp:</span> +255 783 927 291</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 NkimbiliDigital Skills Academy. All Rights Reserved. Designed by Mwalimu Monday M. Nkimbili.
+  </footer>
+
+</body>
+</html>

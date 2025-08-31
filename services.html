@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | NkimbiliDigital Skills Academy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #0f4c75;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav h2 {
+      font-size: 26px;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .services-section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .services-section h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #0f4c75;
+      animation: slideUp 1s ease;
+    }
+
+    .services-section p {
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.4s;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .card:hover {
+      background: #e0f4ff;
+      transform: scale(1.04);
+    }
+
+    .card h3 {
+      color: #0f4c75;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: #0f4c75;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 60px;
+      animation: slideUp 1.5s ease;
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .services-section h1 {
+        font-size: 28px;
+      }
+
+      .services-section p {
+        font-size: 16px;
+      }
+
+      .card h3 {
+        font-size: 16px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>NkimbiliDigital Skills Academy</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li><a href="work with us.html">Work With Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h1>Our Services</h1>
+    <p>
+      We offer specialized training and digital tools designed to enhance your productivity and skills in today’s digital world. Here’s what we offer:
+    </p>
+
+    <div class="service-list">
+      <div class="card">
+        <h3>Microsoft Word Basics</h3>
+        <p>Learn how to create and format professional documents using MS Word.</p>
+      </div>
+      <div class="card">
+        <h3>Microsoft Excel Essentials</h3>
+        <p>Master spreadsheets, formulas, and data entry techniques with Excel.</p>
+      </div>
+      <div class="card">
+        <h3>Microsoft PowerPoint</h3>
+        <p>Create engaging presentations with animations and smart design tools.</p>
+      </div>
+      <div class="card">
+        <h3>Microsoft Publisher</h3>
+        <p>Design flyers, brochures, and more using Microsoft Publisher tools.</p>
+      </div>
+      <div class="card">
+        <h3>Advanced Excel</h3>
+        <p>Learn pivot tables, VLOOKUP, charts, and data analysis techniques.</p>
+      </div>
+      <div class="card">
+        <h3>Internet & Email Skills</h3>
+        <p>Gain essential skills in advanced browsing, searching, and email communication.</p>
+      </div>
+      <div class="card">
+        <h3>HTML & Web Structure</h3>
+        <p>Understand the basics of web pages, HTML tags, and structure.</p>
+      </div>
+      <div class="card">
+        <h3>CSS Styling</h3>
+        <p>Learn to style web pages beautifully with Cascading Style Sheets (CSS).</p>
+      </div>
+      <div class="card">
+        <h3>Responsive Web Design</h3>
+        <p>Make your websites mobile-friendly and responsive across devices.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Learn the basics of promoting products and services online.</p>
+      </div>
+      <div class="card">
+        <h3>Canva for Beginners</h3>
+        <p>Design social media graphics and posters using Canva templates.</p>
+      </div>
+      <div class="card">
+        <h3>Designing Business Cards</h3>
+        <p>Learn how to create business cards using simple tools and templates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 NkimbiliDigital Skills Academy. All Rights Reserved. Designed by Mwalimu Monday M. Nkimbili.
+  </footer>
+
+</body>
+</html>

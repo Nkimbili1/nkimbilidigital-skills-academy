@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Educational Links | Digital Skills Academy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #dff6ff, #ffffff);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #0f4c75;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav h2 {
+      font-size: 26px;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .links-section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .links-section h1 {
+      font-size: 36px;
+      color: #0f4c75;
+      margin-bottom: 15px;
+      animation: slideUp 1s ease;
+    }
+
+    .links-section p {
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+      margin-bottom: 40px;
+      color: #444;
+    }
+
+    .link-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #f8faff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: 0.4s;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .card:hover {
+      background: #e0f4ff;
+      transform: scale(1.04);
+    }
+
+    .card h3 {
+      color: #0f4c75;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      color: #004e92;
+    }
+
+    footer {
+      background: #0f4c75;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 60px;
+      animation: slideUp 1.5s ease;
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .links-section h1 {
+        font-size: 28px;
+      }
+
+      .links-section p {
+        font-size: 16px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>NkimbiliDigital Skills Academy</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li><a href="work with us.html">Work With Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Educational Links -->
+  <section class="links-section">
+    <h1>Useful Educational Links</h1>
+    <p>
+      Explore key resources to help you with national exams, curriculum content, higher learning applications, and more. These links are essential for students, teachers, and parents.
+    </p>
+
+    <div class="link-cards">
+      <div class="card">
+        <h3>NECTA</h3>
+        <p>Access exam results, formats, past papers, and updates from the National Examination Council of Tanzania.</p>
+        <a href="https://www.necta.go.tz/" target="_blank">Visit NECTA</a>
+      </div>
+
+      <div class="card">
+        <h3>TIE (Tanzania Institute of Education)</h3>
+        <p>Find syllabi, teaching materials, textbooks, and teacher guides for all subjects.</p>
+        <a href="https://www.tie.go.tz/" target="_blank">Visit TIE</a>
+      </div>
+
+      <div class="card">
+        <h3>MOE (Ministry of Education)</h3>
+        <p>Get official updates, education policies, and national strategies from the Ministry.</p>
+        <a href="https://www.moe.go.tz/" target="_blank">Visit MOE</a>
+      </div>
+
+      <div class="card">
+        <h3>NACTVET</h3>
+        <p>Explore technical and vocational education programs, admissions, and updates.</p>
+        <a href="https://www.nacte.go.tz/" target="_blank">Visit NACTVET</a>
+      </div>
+
+      <div class="card">
+        <h3>HESLB</h3>
+        <p>Check student loan application details, statuses, and repayment systems.</p>
+        <a href="https://www.heslb.go.tz/" target="_blank">Visit HESLB</a>
+      </div>
+
+      <div class="card">
+        <h3>TCU (Tanzania Commission for Universities)</h3>
+        <p>Discover university admissions, guidebooks, and official degree program lists.</p>
+        <a href="https://www.tcu.go.tz/" target="_blank">Visit TCU</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 NkimbiliDigital Skills Academy. All Rights Reserved. Designed by Mwalimu M. Nkimbili.
+  </footer>
+
+</body>
+</html>
